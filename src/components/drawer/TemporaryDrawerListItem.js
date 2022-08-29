@@ -8,8 +8,8 @@ const TemporaryDrawerListItem = (props) => {
   return (
     <ListItem disablePadding>
         <ListItemButton>
-        <ListItemIcon>{props.icon}</ListItemIcon>
-        <ListItemText primary={props.text} />
+          <ListItemIcon>{props.icon}</ListItemIcon>
+          <ListItemText primary={props.text} />
         </ListItemButton>
     </ListItem>
   )
