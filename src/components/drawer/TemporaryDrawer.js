@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { Button } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import TemporaryDrawerList from './TemporaryDrawerList';
-import TemporaryDrawerButton from './TemporaryDrawerButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function TemporaryDrawer() {
 
@@ -17,7 +18,7 @@ export default function TemporaryDrawer() {
 
   return (
     <React.Fragment>
-      <TemporaryDrawerButton toggleDrawer={toggleDrawer} />
+      <Button onClick={toggleDrawer(true)}>{<MenuIcon />}</Button>
       <Drawer
         anchor={'left'}
         open={visible}
